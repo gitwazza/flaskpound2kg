@@ -81,7 +81,10 @@ def convert3():
     if request.method == 'GET':
         return render_template("convert3.html")
 
-# In this 4th example the convert4 function is very similar to the convert
+# In this 4th example the convert4 function is very similar to the convert3
+# function. However, in this example a different function is also used
+# to perform the conversion from pounds to kg so that the error can
+# be presented on the web page rather than the terminal.
 @app.route('/convert4', methods=["POST", "GET"])
 def convert4():
     if request.method == 'POST':
